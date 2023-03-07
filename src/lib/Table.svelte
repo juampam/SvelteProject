@@ -44,7 +44,7 @@
 
 
   </script>
-<button class="btn btn-active btn-secundary" on:click={getusers}>Find</button>
+<button class="btn btn-active btn-secundary" on:click={getusers}>Ver todos</button>
 
 <div class="overflow-x-auto">
     <table class="table w-full">
