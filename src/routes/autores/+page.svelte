@@ -3,7 +3,7 @@
 	import { GraphQLClient } from 'graphql-request';
 	import Card from '../../components/molecules/Card.svelte';
 	import { onMount } from 'svelte';
-
+	import Nav from '../../components/molecules/Nav.svelte';
 	const client = new GraphQLClient('https://blog-backend-blush.vercel.app/graphql');
 
 	let users = [];
@@ -96,7 +96,7 @@ onMount(() => {
 
 </script>
 
-
+<Nav/>
 {#if loading}
     <div class="h-screen w-screeen flex items-center justify-center text-3xl font-bold">
         Cargando...
